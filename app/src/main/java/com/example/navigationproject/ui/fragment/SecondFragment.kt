@@ -13,12 +13,12 @@ import com.example.navigationproject.databinding.FragmentSecondBinding
 class SecondFragment : Fragment() {
 
     var binding: FragmentSecondBinding? = null
-    private val args: SecondFragmentArgs by navArgs<SecondFragmentArgs>()
+    val args: SecondFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSecondBinding.inflate(inflater)
         return binding!!.root
     }
